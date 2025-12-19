@@ -70,6 +70,46 @@ export default function PricingPreview() {
           </p>
         </motion.div>
 
+        {/* Free Trial Card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-md mx-auto mb-12"
+        >
+          <div className="glass-strong rounded-2xl p-8 text-center border-2 border-primary-pink shadow-pink-glow">
+            <motion.div
+              animate={{ 
+                scale: [1, 1.05, 1],
+              }}
+              transition={{ 
+                duration: 2,
+                repeat: Infinity,
+                ease: "easeInOut"
+              }}
+              className="w-16 h-16 bg-gradient-to-r from-primary-pink to-primary-pink-dark rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <span className="text-2xl font-bold">🎉</span>
+            </motion.div>
+            <h3 className="text-2xl font-heading font-bold mb-2">
+              Start Your Free Trial
+            </h3>
+            <p className="text-muted-grey mb-6">
+              Experience all features with our 14-day free trial. No credit card required.
+            </p>
+            <motion.a
+              href="https://ems-zemplify-feat-modules-clone.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block w-full py-3 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white font-semibold rounded-lg hover:shadow-pink-glow transition-all duration-300"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              Get Free Trial
+            </motion.a>
+          </div>
+        </motion.div>
+
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan, index) => (
             <motion.div

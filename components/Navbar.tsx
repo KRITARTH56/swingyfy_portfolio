@@ -121,8 +121,10 @@ export default function Navbar() {
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Link
-                href="/pricing"
+              <a
+                href="https://ems-zemplify-feat-modules-clone.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="relative px-6 py-2 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white rounded-lg font-semibold hover:shadow-pink-glow transition-all duration-300 overflow-hidden group cursor-pointer inline-block"
               >
                 <motion.span
@@ -132,7 +134,7 @@ export default function Navbar() {
                   transition={{ duration: 0.5 }}
                 />
                 <span className="relative z-10">Get Free Trial</span>
-              </Link>
+              </a>
             </motion.div>
           </div>
 
@@ -188,13 +190,15 @@ export default function Navbar() {
                 >
                   Login
                 </Link>
-                <Link
-                  href="/pricing"
+                <a
+                  href="https://ems-zemplify-feat-modules-clone.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block text-center px-6 py-2 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white rounded-lg font-semibold cursor-pointer"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Get Free Trial
-                </Link>
+                </a>
               </div>
             </div>
           </motion.div>

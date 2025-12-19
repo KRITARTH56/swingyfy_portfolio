@@ -34,7 +34,7 @@ const footerLinks = {
 const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/company/swingyfy', label: 'LinkedIn' },
   { icon: Instagram, href: '#', label: 'Instagram' },
 ]
 
@@ -217,8 +217,8 @@ export default function Footer() {
           </p>
           <div className="flex items-center gap-2 text-muted-grey text-xs md:text-sm">
             <Mail className="w-3 h-3 md:w-4 md:h-4" />
-            <a href="mailto:hello@swingyfy.com" className="hover:text-primary-pink transition-colors">
-              hello@swingyfy.com
+            <a href="mailto:swingyfy@gmail.com" className="hover:text-primary-pink transition-colors">
+              swingyfy@gmail.com
             </a>
           </div>
         </div>

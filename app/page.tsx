@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero'
 import FeaturesGrid from '@/components/FeaturesGrid'
 import TrustBar from '@/components/TrustBar'
+import ProductShowcase from '@/components/ProductShowcase'
 import WhySwingyFy from '@/components/WhySwingyFy'
 import PricingPreview from '@/components/PricingPreview'
 import TestimonialSlider from '@/components/TestimonialSlider'
@@ -16,6 +17,9 @@ export default function Home() {
       </div>
       <div className="w-full">
         <FeaturesGrid />
+      </div>
+      <div className="w-full">
+        <ProductShowcase />
       </div>
       <div className="w-full">
         <WhySwingyFy />

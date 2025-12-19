@@ -6,30 +6,30 @@ import { Quote, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    name: 'Sarah Johnson',
+    name: 'Rajesh Kumar',
     role: 'HR Director',
-    company: 'TechCorp',
+    company: 'Aeroyantra',
     content: 'SwingyFy has transformed how we manage our workforce. The automation features saved us countless hours, and our team loves the intuitive interface.',
     rating: 5,
   },
   {
-    name: 'Michael Chen',
+    name: 'Priya Sharma',
     role: 'CEO',
-    company: 'StartupHub',
+    company: 'Algofission',
     content: 'As a growing company, we needed an HRMS that could scale with us. SwingyFy has been perfect - it grows with our team and the support is exceptional.',
     rating: 5,
   },
   {
-    name: 'Emily Rodriguez',
+    name: 'Amit Singh',
     role: 'People Operations Manager',
-    company: 'InnovateLabs',
+    company: 'SSP Enterprise',
     content: 'The analytics and insights we get from SwingyFy help us make data-driven decisions. It\'s become an essential tool for our HR operations.',
     rating: 5,
   },
   {
-    name: 'David Kim',
+    name: 'Sarah Johnson',
     role: 'CFO',
-    company: 'GrowthCo',
+    company: 'Cody',
     content: 'Payroll processing used to take days. Now it\'s automated and takes minutes. SwingyFy has been a game-changer for our finance and HR teams.',
     rating: 5,
   },

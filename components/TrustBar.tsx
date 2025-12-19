@@ -3,12 +3,12 @@
 import { motion } from 'framer-motion'
 
 const companies = [
+  'Aeroyantra',
+  'Algofission',
+  'SSP Enterprise',
+  'Cody',
   'TechCorp',
   'InnovateLabs',
-  'StartupHub',
-  'GrowthCo',
-  'ScaleUp',
-  'FutureTech',
 ]
 
 export default function TrustBar() {
@@ -42,6 +42,10 @@ export default function TrustBar() {
     </section>
   )
 }
+
+
+
+
 
 
 
