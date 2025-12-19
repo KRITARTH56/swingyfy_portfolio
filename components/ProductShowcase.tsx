@@ -124,20 +124,13 @@ export default function ProductShowcase() {
             transition={{ duration: 0.5 }}
             className="relative rounded-2xl overflow-hidden glass-strong"
           >
-            {/* Placeholder for screenshot - replace with actual images */}
-            <div className="aspect-video bg-gradient-to-br from-graphite-dark to-deep-charcoal flex items-center justify-center relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-pink/10 to-primary-pink-dark/10"></div>
-              <div className="text-center z-10">
-                <div className="w-24 h-24 bg-primary-pink/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Play className="w-12 h-12 text-primary-pink" />
-                </div>
-                <h3 className="text-2xl font-heading font-bold mb-2">
-                  {filteredScreenshots[currentIndex]?.title}
-                </h3>
-                <p className="text-muted-grey max-w-md">
-                  {filteredScreenshots[currentIndex]?.description}
-                </p>
-              </div>
+            {/* Actual Screenshot Display */}
+            <div className="relative bg-gradient-to-br from-graphite-dark to-deep-charcoal">
+              <img
+                src={filteredScreenshots[currentIndex]?.image}
+                alt={filteredScreenshots[currentIndex]?.title}
+                className="w-full h-auto object-contain"
+              />
             </div>
             
             {/* Screenshot Info Overlay */}
@@ -186,14 +179,11 @@ export default function ProductShowcase() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="w-full h-full bg-gradient-to-br from-graphite-dark to-deep-charcoal flex items-center justify-center">
-                <div className="text-center">
-                  <div className="w-8 h-8 bg-primary-pink/20 rounded-full flex items-center justify-center mx-auto mb-1">
-                    <Play className="w-4 h-4 text-primary-pink" />
-                  </div>
-                  <p className="text-xs text-muted-grey">{screenshot.category}</p>
-                </div>
-              </div>
+              <img
+                src={screenshot.image}
+                alt={screenshot.title}
+                className="w-full h-full object-contain bg-gradient-to-br from-graphite-dark to-deep-charcoal"
+              />
             </motion.button>
           ))}
         </div>
