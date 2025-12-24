@@ -105,13 +105,13 @@ export default function Footer() {
             <motion.div
               whileHover={{ scale: 1.05 }}
             >
-              <Link href="/" className="flex items-center gap-3 mb-4">
+              <Link href="/" className="flex items-center gap-0 mb-4">
                 <img 
                   src="/logo-icon.svg" 
                   alt="SwingyFy Logo" 
                   className="w-10 h-10"
                 />
-                <span className="text-xl font-heading font-bold bg-gradient-to-r from-primary-pink to-primary-pink-dark bg-clip-text text-transparent">
+                <span className="text-2xl font-heading font-bold bg-gradient-to-r from-primary-pink to-primary-pink-dark bg-clip-text text-transparent">
                   SwingyFy
                 </span>
               </Link>

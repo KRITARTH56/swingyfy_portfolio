@@ -43,7 +43,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-0">
               <motion.div 
                 className="w-10 h-10 flex items-center justify-center"
                 whileHover={{ 
@@ -58,11 +58,11 @@ export default function Navbar() {
                 <img 
                   src="/logo-icon.svg" 
                   alt="SwingyFy Logo" 
-                  className="w-10 h-10"
+                  className="w-10 h-9"
                 />
               </motion.div>
               <motion.span 
-                className="text-xl font-heading font-bold bg-gradient-to-r from-primary-pink to-primary-pink-dark bg-clip-text text-transparent"
+                className="text-2xl font-heading font-bold bg-gradient-to-r from-primary-pink to-primary-pink-dark bg-clip-text text-transparent"
                 whileHover={{ scale: 1.05 }}
               >
                 SwingyFy
