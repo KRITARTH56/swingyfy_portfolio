@@ -98,7 +98,7 @@ export default function PricingPreview() {
               Experience all features with our 14-day free trial. No credit card required.
             </p>
             <motion.a
-              href="https://ems-zemplify-feat-modules-clone-93u.vercel.app/"
+              href="https://app.swingyfy.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block w-full py-3 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white font-semibold rounded-lg hover:shadow-pink-glow transition-all duration-300"

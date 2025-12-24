@@ -122,7 +122,7 @@ export default function Navbar() {
               whileTap={{ scale: 0.95 }}
             >
               <a
-                href="https://ems-zemplify-feat-modules-clone-93u.vercel.app/"
+                href="https://app.swingyfy.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative px-6 py-2 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white rounded-lg font-semibold hover:shadow-pink-glow transition-all duration-300 overflow-hidden group cursor-pointer inline-block"
@@ -191,7 +191,7 @@ export default function Navbar() {
                   Login
                 </Link>
                 <a
-                  href="https://ems-zemplify-feat-modules-clone-93u.vercel.app/"
+                  href="https://app.swingyfy.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block text-center px-6 py-2 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white rounded-lg font-semibold cursor-pointer"

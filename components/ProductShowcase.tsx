@@ -200,7 +200,7 @@ export default function ProductShowcase() {
               Ready to experience SwingyFy for yourself?
             </p>
             <a
-              href="https://ems-zemplify-feat-modules-clone-93u.vercel.app/"
+              href="https://app.swingyfy.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-block px-8 py-3 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white font-semibold rounded-lg hover:shadow-pink-glow transition-all duration-300"
