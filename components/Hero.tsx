@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useRef } from 'react'
 import Link from 'next/link'
-import { ArrowRight, Play } from 'lucide-react'
+import { ArrowRight, Play, ExternalLink } from 'lucide-react'
 import RatingsBadge from './RatingsBadge'
 import FeatureCard from './FeatureCard'
 
@@ -117,8 +117,10 @@ export default function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Link
-                  href="/pricing"
+                <a
+                  href="https://app.swingyfy.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="relative w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white rounded-lg font-semibold hover:shadow-pink-glow transition-all duration-300 flex items-center justify-center gap-2 group overflow-hidden text-sm md:text-base"
                 >
                   <motion.span
@@ -134,7 +136,7 @@ export default function Hero() {
                       <ArrowRight className="w-5 h-5" />
                     </motion.div>
                   </span>
-                </Link>
+                </a>
               </motion.div>
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -162,7 +164,7 @@ export default function Hero() {
 
             {/* Rating Badges */}
             <motion.div 
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-4 mb-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.6 }}
@@ -179,6 +181,25 @@ export default function Hero() {
               >
                 <RatingsBadge platform="Capterra" rating={4.6} />
               </motion.div>
+            </motion.div>
+
+            {/* Powered by AlgoFission */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              className="flex items-center gap-2 text-muted-grey text-xl"
+            >
+              <span>Powered by</span>
+              <a 
+                href="https://algofission.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-pink hover:text-primary-pink-dark transition-colors font-large inline-flex items-center gap-1"
+              >
+                AlgoFission
+                <ExternalLink className="w-4 h-4" />
+              </a>
             </motion.div>
           </motion.div>
 

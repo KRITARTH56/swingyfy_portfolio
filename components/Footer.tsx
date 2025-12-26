@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Facebook, Twitter, Linkedin, Instagram, Mail } from 'lucide-react'
+import { Facebook, Twitter, Linkedin, Instagram, Mail, ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const footerLinks = {
@@ -34,8 +34,8 @@ const footerLinks = {
 const socialLinks = [
   { icon: Facebook, href: '#', label: 'Facebook' },
   { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Linkedin, href: 'https://www.linkedin.com/company/swingyfy', label: 'LinkedIn' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: Linkedin, href: 'https://www.linkedin.com/company/109972083/admin/dashboard/', label: 'LinkedIn' },
+  { icon: Instagram, href: 'https://www.instagram.com/swingyfy?igsh=MW9nOGZlNDVqaThzNA==', label: 'Instagram' },
 ]
 
 export default function Footer() {
@@ -211,15 +211,33 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-6 md:pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4">
-          <p className="text-muted-grey text-xs md:text-sm text-center md:text-left">
-            © {new Date().getFullYear()} SwingyFy. All rights reserved.
-          </p>
-          <div className="flex items-center gap-2 text-muted-grey text-xs md:text-sm">
-            <Mail className="w-3 h-3 md:w-4 md:h-4" />
-            <a href="mailto:swingyfy@gmail.com" className="hover:text-primary-pink transition-colors">
-              swingyfy@gmail.com
-            </a>
+        <div className="pt-6 md:pt-8 border-t border-white/10">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 mb-3">
+            <p className="text-muted-grey text-xs md:text-sm text-center md:text-left">
+              © {new Date().getFullYear()} SwingyFy. All rights reserved.
+            </p>
+            <div className="flex items-center gap-2 text-muted-grey text-xs md:text-sm">
+              <Mail className="w-3 h-3 md:w-4 md:h-4" />
+              <a href="mailto:swingyfy@gmail.com" className="hover:text-primary-pink transition-colors">
+                swingyfy@gmail.com
+              </a>
+            </div>
+          </div>
+          
+          {/* Powered by AlgoFission */}
+          <div className="text-center pt-3 border-t border-white/5">
+            <p className="text-muted-grey text-xl">
+              Powered by{' '}
+              <a 
+                href="https://algofission.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-pink hover:text-primary-pink-dark transition-colors font-large inline-flex items-center gap-1"
+              >
+                AlgoFission
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </p>
           </div>
         </div>
       </div>

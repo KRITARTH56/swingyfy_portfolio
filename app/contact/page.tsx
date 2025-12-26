@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Mail, Phone, MapPin } from 'lucide-react'
+import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
 
 export default function ContactPage() {
   return (
@@ -56,6 +56,22 @@ export default function ContactPage() {
                   <p className="text-muted-grey">Lucknow, Uttar Pradesh</p>
                 </div>
               </div>
+            </div>
+
+            {/* Powered by AlgoFission */}
+            <div className="glass rounded-2xl p-6 text-center">
+              <p className="text-muted-grey text-base">
+                SwingyFy is powered by{' '}
+                <a 
+                  href="https://algofission.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary-pink hover:text-primary-pink-dark transition-colors font-large inline-flex items-center gap-1"
+                >
+                  AlgoFission
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </p>
             </div>
           </div>
 

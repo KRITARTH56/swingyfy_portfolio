@@ -30,8 +30,10 @@ export default function HeroContent() {
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row flex-wrap gap-3 md:gap-4 mb-6 md:mb-8 relative z-30" style={{ display: 'flex', opacity: 1, visibility: 'visible' }}>
           <div className="relative z-30">
-            <Link
-              href="/pricing"
+            <a
+              href="https://app.swingyfy.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="relative w-full sm:w-auto px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white rounded-lg font-semibold hover:shadow-pink-glow transition-all duration-300 flex items-center justify-center gap-2 group overflow-hidden text-sm md:text-base z-30"
               style={{ display: 'flex', visibility: 'visible', opacity: 1 }}
             >
@@ -39,7 +41,7 @@ export default function HeroContent() {
                 Get Free Trial
                 <ArrowRight className="w-5 h-5" />
               </span>
-            </Link>
+            </a>
           </div>
           <div className="relative z-30">
             <Link

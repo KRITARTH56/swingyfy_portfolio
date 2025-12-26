@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import { ChevronLeft, ChevronRight, Play } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Play, ExternalLink } from 'lucide-react'
 
 const productScreenshots = [
   {
@@ -207,6 +207,22 @@ export default function ProductShowcase() {
             >
               Try Free Demo
             </a>
+            
+            {/* Powered by AlgoFission */}
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <p className="text-muted-grey text-large">
+                Powered by{' '}
+                <a 
+                  href="https://algofission.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-primary-pink hover:text-primary-pink-dark transition-colors font-large inline-flex items-center gap-1"
+                >
+                  AlgoFission
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </p>
+            </div>
           </motion.div>
         </div>
       </div>

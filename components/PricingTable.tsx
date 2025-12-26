@@ -353,8 +353,10 @@ export default function PricingTable() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  <Link
-                    href="/contact"
+                  <a
+                    href="https://app.swingyfy.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className={`block w-full text-center py-3 rounded-lg font-semibold transition-all duration-300 relative overflow-hidden ${
                       plan.popular
                         ? 'bg-gradient-to-r from-primary-pink to-primary-pink-dark text-white hover:shadow-pink-glow'
@@ -371,7 +373,7 @@ export default function PricingTable() {
                       Start Free Trial
                       <ArrowRight className="w-4 h-4" />
                     </span>
-                  </Link>
+                  </a>
                 </motion.div>
               </div>
 

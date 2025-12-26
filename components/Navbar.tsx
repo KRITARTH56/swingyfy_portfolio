@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ExternalLink } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar() {
@@ -107,17 +107,6 @@ export default function Navbar() {
           {/* CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link
-                href="/contact"
-                className="px-4 py-2 text-muted-grey hover:text-primary-pink transition-colors font-medium cursor-pointer"
-              >
-                Login
-              </Link>
-            </motion.div>
-            <motion.div
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -183,13 +172,6 @@ export default function Navbar() {
                 )
               })}
               <div className="pt-4 border-t border-white/10 space-y-3">
-                <Link
-                  href="/contact"
-                  className="block text-center px-4 py-2 text-muted-grey hover:text-primary-pink transition-colors font-medium cursor-pointer"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Login
-                </Link>
                 <a
                   href="https://app.swingyfy.com/"
                   target="_blank"
@@ -199,6 +181,22 @@ export default function Navbar() {
                 >
                   Get Free Trial
                 </a>
+                
+                {/* Powered by AlgoFission */}
+                <div className="text-center pt-2">
+                  <p className="text-muted-grey text-xl">
+                    Powered by{' '}
+                    <a 
+                      href="https://algofission.com" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-primary-pink hover:text-primary-pink-dark transition-colors font-large inline-flex items-center gap-1"
+                    >
+                      AlgoFission
+                      <ExternalLink className="w-3 h-3" />
+                    </a>
+                  </p>
+                </div>
               </div>
             </div>
           </motion.div>

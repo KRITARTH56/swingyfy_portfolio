@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check, ArrowRight, ExternalLink } from 'lucide-react'
 
 const plans = [
   {
@@ -227,6 +227,22 @@ export default function PricingPreview() {
             View all pricing details
             <ArrowRight className="w-5 h-5" />
           </Link>
+          
+          {/* Powered by AlgoFission */}
+          <div className="mt-8 pt-6 border-t border-white/10">
+            <p className="text-muted-grey text-large">
+              Powered by{' '}
+              <a 
+                href="https://algofission.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary-pink hover:text-primary-pink-dark transition-colors font-large inline-flex items-center gap-1"
+              >
+                AlgoFission
+                <ExternalLink className="w-4 h-4" />
+              </a>
+            </p>
+          </div>
         </motion.div>
       </div>
     </section>
