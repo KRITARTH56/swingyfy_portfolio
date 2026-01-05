@@ -46,10 +46,12 @@ const footerLinks = {
 }
 
 const socialLinks = [
-  { icon: Facebook, href: '#', label: 'Facebook' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
+  { icon: Facebook, href: 'https://www.facebook.com/profile.php?id=61585452736536', label: 'Facebook' },
+  { icon: Twitter, href: 'https://x.com/SwingyFy', label: 'Twitter' },
   { icon: Linkedin, href: 'https://www.linkedin.com/company/109972083/admin/dashboard/', label: 'LinkedIn' },
   { icon: Instagram, href: 'https://www.instagram.com/swingyfy?igsh=MW9nOGZlNDVqaThzNA==', label: 'Instagram' },
+  { icon: RedditIcon, href: 'https://www.reddit.com/user/SwingyFy/', label: 'Reddit' },
+  { icon: MediumIcon, href: 'https://medium.com/@swingyfy', label: 'Medium' },
 ]
 
 export default function Footer() {
@@ -136,10 +138,13 @@ export default function Footer() {
             <div className="flex gap-3 md:gap-4">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon
+                const isCustomIcon = social.icon === RedditIcon || social.icon === MediumIcon
                 return (
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="p-2 glass rounded-lg hover:border-primary-pink transition-all duration-300"
                     aria-label={social.label}
                     whileHover={{ scale: 1.1, rotate: 360 }}
@@ -148,7 +153,11 @@ export default function Footer() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: index * 0.1 }}
                   >
-                    <Icon className="w-4 h-4 md:w-5 md:h-5 text-muted-grey hover:text-primary-pink transition-colors" />
+                    {isCustomIcon ? (
+                      <Icon className="w-4 h-4 md:w-5 md:h-5 text-muted-grey hover:text-primary-pink transition-colors" />
+                    ) : (
+                      <Icon className="w-4 h-4 md:w-5 md:h-5 text-muted-grey hover:text-primary-pink transition-colors" />
+                    )}
                   </motion.a>
                 )
               })}
